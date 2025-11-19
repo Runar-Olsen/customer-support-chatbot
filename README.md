@@ -46,11 +46,12 @@ pip install -r requirements.txt
 2️⃣ Kjør applikasjonen
 ```bash
 streamlit run src/app.py
+```
 
 3️⃣ Åpne nettleseren
 Streamlit starter automatisk på:
 👉 http://localhost:8501
-```
+
 ---
 
 ## 🧾 Dataformat
