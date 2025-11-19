@@ -27,32 +27,43 @@ customer-support-chatbot/
 ├─ .gitignore
 ├─ requirements.txt
 └─ README.md
+```
+---
 
 ## ▶️ Kom i gang
 
 1️⃣ Opprett og aktiver virtuelt miljø
 
+```bash
 python -m venv .venv
- Windows PowerShell:
+
+# Windows PowerShell:
 .\.venv\Scripts\Activate.ps1
+
 pip install -r requirements.txt
+```
 
 2️⃣ Kjør applikasjonen
-
+```bash
 streamlit run src/app.py
 
 3️⃣ Åpne nettleseren
 Streamlit starter automatisk på:
 👉 http://localhost:8501
+```
+---
 
 ## 🧾 Dataformat
 
-data/faq.csv må inneholde tre kolonner:
+`data/faq.csv` må inneholde tre kolonner:
 
-category	question	answer
-Contract	How can I cancel my contract?	You can cancel via the self-service portal under “My subscription” → “Cancel”, or call support at 21 00 00.
-Billing	Why is my invoice higher this month?	Extra charges may include add-ons, roaming, or late fees. Check your invoice details in the portal → “Billing”.
-Coverage	Do you have 5G in my area?	Check the coverage map on our website. 5G is available in major cities and expanding monthly.
+| category | question | answer |
+|----------|----------|---------|
+| Contract | How can I cancel my contract? | You can cancel via the self-service portal under “My subscription” → “Cancel”, or call support at 21 00 00. |
+| Billing | Why is my invoice higher this month? | Extra charges may include add-ons, roaming, or late fees. Check your invoice details in the portal → “Billing”. |
+| Coverage | Do you have 5G in my area? | Check the coverage map on our website. 5G is available in major cities and expanding monthly. |
+
+---
 
 ## 💡 Tips:
 
@@ -61,6 +72,8 @@ Filen må lagres som UTF-8 (Comma delimited) CSV
 Har du spørsmål eller svar med komma → bruk anførselstegn rundt teksten
 
 Kolonnenavn må være nøyaktig category, question, answer
+
+---
 
 ## 🧠 Hvordan det fungerer
 
@@ -71,12 +84,16 @@ Kolonnenavn må være nøyaktig category, question, answer
 5️⃣ Hvis høyeste score > terskel → vis svar
 6️⃣ Hvis score < terskel → appen viser “I’m not confident” og lignende spørsmål
 
+---
+
 ## 🧩 Teknologier brukt
 - Python
 - Streamlit
 - Pandas
 - Scikit-learn (TfidfVectorizer, cosine_similarity)
 - Joblib / utils for logging og stier
+
+---
 
 ## 🧪 Eksempel på bruk
 
@@ -85,6 +102,8 @@ Input:
 
 Output:
 “Within EEA you use your domestic allowance at no extra cost. Fair usage limits may apply.”
+
+---
 
 ## 🚀 Videre arbeid (forslag til oppgraderinger)
 -💡 Embeddings:
@@ -95,6 +114,8 @@ Koble til OpenAI API / LangChain for “RAG”-modus – hvis modellen er usikke
 Bruk samme rammeverk for intern FAQ, produktkunnskap, HR, IT-support, etc.
 -📊 Analyse:
 Logg brukerforespørsler og bygg et Power BI-dashboard for innsikt i spørsmålstyper
+
+---
 
 ## 🧭 Forfatter
 Runar Olsen
