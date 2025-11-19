@@ -78,12 +78,12 @@ Kolonnenavn må være nøyaktig category, question, answer
 
 ## 🧠 Hvordan det fungerer
 
-1️⃣ Bruker skriver et spørsmål i tekstboksen
-2️⃣ Modellen konverterer spørsmålet til TF-IDF-vektor
-3️⃣ Cosine-similarity måles mot alle spørsmål i FAQ
-4️⃣ Topp-k mest like spørsmål hentes og rangeres
-5️⃣ Hvis høyeste score > terskel → vis svar
-6️⃣ Hvis score < terskel → appen viser “I’m not confident” og lignende spørsmål
+- 1️⃣ Bruker skriver et spørsmål i tekstboksen
+- 2️⃣ Modellen konverterer spørsmålet til TF-IDF-vektor
+- 3️⃣ Cosine-similarity måles mot alle spørsmål i FAQ
+- 4️⃣ Topp-k mest like spørsmål hentes og rangeres
+- 5️⃣ Hvis høyeste score > terskel → vis svar
+- 6️⃣ Hvis score < terskel → appen viser “I’m not confident” og lignende spørsmål
 
 ---
 
